@@ -1,0 +1,49 @@
+ body {
+   background: linear-gradient(to right, #6a11cb, #2575fc);
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+ }
+
+ .container {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+ }
+
+ .board {
+   display: grid;
+   grid-template-columns: repeat(3, 100px);
+   gap: 5px;
+   margin: 10px auto;
+   position: relative;
+ }
+
+ .cell {
+   width: 100px;
+   height: 100px;
+   font-size: 2em;
+   text-align: center;
+   line-height: 100px;
+   cursor: pointer;
+   background: linear-gradient(to right, #4ca1af, #c4e0e5);
+   border: 2px solid #fff;
+   border-radius: 5px;
+ }
+
+ .cell:hover {
+   background: linear-gradient(to right, #4ca1af, #c4e0e5);
+   opacity: 0.8;
+ }
+
+ .winner {
+   background: linear-gradient(to right, #ff3366, #b21f1f);
+   color: #fff;
+   border: 2px solid #fff;
+ }
